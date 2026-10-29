@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4a263e">
+  <title>Happy Birthday, Mummy! 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">
+    <span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Happy Birthday Mom home"><span class="brand-heart">♥</span> Happy Birthday Mom</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="#home">⌂ <span>Home</span></a>
+      <a href="#message">♥ <span>Message</span></a>
+      <a href="#surprise">🎁 <span>Surprise</span></a>
+      <a href="#gallery">▧ <span>Gallery</span></a>
+      <a href="#reasons">★ <span>For You</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">TO THE MOST AMAZING MUMMY...</p>
+        <h1>Happy Birthday,<br><em>Mummy!</em> <span class="outline-heart">♡</span></h1>
+        <p class="hero-text">Dear <b>Rekha Sharma</b>, today is your special day, and you deserve all the love, happiness and joy in the world. Thank you for always being there, for your endless love, and for making life so beautiful.</p>
+        <button class="primary-btn" data-open-surprise>🎁 &nbsp; Click for a Special Surprise <span>›</span></button>
+      </div>
+      <div class="hero-art" role="img" aria-label="Birthday cake and flowers">
+        <div class="art-glow"></div>
+        <div class="cake-emoji">🎂</div>
+        <div class="flower-emoji">💐</div>
+        <div class="hero-note">You are<br>my greatest<br>blessing ♥</div>
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Birthday features">
+      <button class="feature-card pink" data-scroll="message"><span class="feature-icon">♥</span><span><strong>Special Message</strong><small>Read a heartfelt note</small></span><b>›</b></button>
+      <button class="feature-card purple" data-open-surprise><span class="feature-icon">🎁</span><span><strong>Birthday Surprise</strong><small>Click for a surprise</small></span><b>›</b></button>
+      <button class="feature-card gold" data-scroll="gallery"><span class="feature-icon">▧</span><span><strong>Photo Gallery</strong><small>Our special moments</small></span><b>›</b></button>
+      <button class="feature-card green" id="musicCard"><span class="feature-icon">♫</span><span><strong>Play Birthday Song</strong><small id="musicStatus">Tap to play Happy Birthday</small></span><b>›</b></button>
+      <button class="feature-card blue" data-scroll="reasons"><span class="feature-icon">★</span><span><strong>You're Special</strong><small>Reasons why I love you</small></span><b>›</b></button>
+    </section>
+
+    <section class="message-section section-pad" id="message">
+      <div class="flower-decoration" aria-hidden="true">🌸</div>
+      <div class="message-copy">
+        <p class="eyebrow">A LITTLE NOTE FROM MY HEART</p>
+        <h2>My Dearest Mummy <span>♡</span></h2>
+        <p>You are not just my mother, you are my guide, my strength, my biggest supporter and my forever friend.</p>
+        <p>Today, I just want to say a big <strong>THANK YOU</strong> for everything you do. You make my world brighter, warmer and happier.</p>
+        <p>May your day be filled with love, smiles, and all the happiness you give to others every single day.</p>
+        <p>The only thing is that ki you always scold me, I feel very sad😭😭😭.</p>
+        <p class="signature">Happy Birthday, Mummy! <span>♡</span></p>
+      </div>
+      <aside class="surprise-card" id="surprise">
+        <div class="gift">🎁</div>
+        <h3>A Special Surprise for You!</h3>
+        <p>Mummy, you are the heart of our family, the light in our lives and the reason for so many smiles. We love you more than words can say! But please Dont be raise on me😭😭</p>
+        <button class="love-btn" id="loveButton">♥ &nbsp; I Love You Mummy</button>
+        <div class="tiny-hearts">♡　♥　♡</div>
+      </aside>
+    </section>
+
+    <section class="gallery-section section-pad" id="gallery">
+      <p class="eyebrow">MEMORIES WE TREASURE</p>
+      <h2>Our Little Gallery <span>📸</span></h2>
+      <p class="section-intro">Every moment with you is a memory worth keeping.</p>
+      <div class="gallery-grid">
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-1.jpeg" data-caption="A little moment, a beautiful memory.">
+          <img src="assets/mom-memory-1.jpeg" alt="A beautiful day with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>  Festival</strong><small>A little moment, a beautiful memory.</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-2.jpeg" data-caption="Your smile makes every place feel warm.">
+          <img src="assets/mom-memory-2.jpeg" alt="Cozy memories with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>Cozy memories</strong><small>Your smile makes every place feel warm.</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-3.jpeg" data-caption="A little sparkle and a lot of love.">
+          <img src="assets/mom-memory-3.jpeg" alt="Looking lovely with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>Looking lovely</strong><small>A little sparkle and a lot of love.</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-4.jpeg" data-caption="Your happiness brightens every room.">
+          <img src="assets/mom-memory-4.jpeg" alt="Simply beautiful with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>Simply beautiful</strong><small>Your happiness brightens every room.</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-5.jpeg" data-caption="So proud of the wonderful woman you are.">
+          <img src="assets/mom-memory-5.jpeg" alt="Shining bright with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>Shining bright</strong><small>So proud of the wonderful woman you are.</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-6.jpeg" data-caption="A smile I will always treasure.">
+          <img src="assets/mom-memory-6.jpeg" alt="A precious smile with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>A precious smile</strong><small>A smile like a daisy.</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-7.jpeg" data-caption="The best memories are the ones we share.">
+          <img src="assets/mom-memory-7.jpeg" alt="Family love with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>Omfo Mirror Queen</strong><small>No comments</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-8.jpeg" data-caption="Our family is so lucky to have you.">
+          <img src="assets/mom-memory-8.jpeg" alt="Together forever with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>Good girl</strong><small>Bahut ache se baithe ho</small>
+        </button>
+        <button class="memory-tile photo-tile" type="button" data-photo="assets/mom-memory-9.jpeg" data-caption="Home is being together with you.">
+          <img src="assets/mom-memory-9.jpeg" alt="My favourite people with Mom" loading="lazy">
+          <span class="photo-heart" aria-hidden="true">♥</span>
+          <strong>Beauty girl</strong><small>Jaawani ki queen.</small>
+        </button>
+      </div>      <p class="gallery-hint">Tap any photo to see it larger. Every picture is a little piece of our love. 💗</p>
+    </section>
+
+    <section class="reasons-section section-pad" id="reasons">
+      <p class="eyebrow">A FEW REASONS (OUT OF MILLIONS)</p>
+      <h2>Why You're So Special, Mom <span>♥</span></h2>
+      <div class="reasons-grid">
+        <article><span>💗</span><h3>Your endless love</h3><p>You love me in ways words can never fully explain.</p></article>
+        <article><span>🌟</span><h3>Your motivation</h3><p>You inspire me to keep going and always do my best.</p></article>
+       <article><span>🤗</span><h3>Your Gaaliya</h3><p>Always you speak rude to me😭, still its fine to me.</p></article>
+        <article><span>🌸</span><h3>Your kind heart</h3><p>You always think good for us.</p></article>
+      </div>
+      <button class="primary-btn bottom-btn" data-open-surprise>One More Surprise for Mom 🎁</button>
+    </section>
+  </main>
+
+  <footer>Made with <span>♥</span> for the world's best Mom <span>♥</span><small>Because the world is a better place with you in it.</small></footer>
+
+  <div class="modal-backdrop" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal">
+      <button class="modal-close" id="closeModal" aria-label="Close surprise">×</button>
+      <div class="modal-confetti">🎉 💗 🎂 💐 🎉</div>
+      <h2 id="modalTitle">Happy Birthday, Mom!</h2>
+      <p>You are my biggest blessing, my safe place, and one of the most beautiful parts of my life. I hope your day is filled with the same love and happiness you give me every day.</p>
+      <p class="modal-signature">I love you to the moon and back! 🌙</p>
+      <button class="primary-btn" id="celebrateButton">Celebrate! ✨</button>
+    </div>
+  </div>
+
+  <div class="photo-lightbox" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button class="photo-lightbox-close" id="photoLightboxClose" type="button" aria-label="Close photo">×</button>
+    <button class="photo-lightbox-arrow prev" id="photoPrev" type="button" aria-label="Previous photo">‹</button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+    <button class="photo-lightbox-arrow next" id="photoNext" type="button" aria-label="Next photo">›</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
